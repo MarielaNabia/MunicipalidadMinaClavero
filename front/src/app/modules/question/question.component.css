@@ -1,0 +1,18 @@
+.botonS{
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.container{
+
+  padding-top: 20px;  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  place-content: center;
+  grid-auto-flow: column;
+  background-color: #cfcdcd;
+ 
+
+  
+}
+

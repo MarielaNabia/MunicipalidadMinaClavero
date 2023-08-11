@@ -1,58 +1,102 @@
-<p>question works!</p>
-<div class="formulario-container">
-    <h2>Datos de Persona Encuestada</h2>
-    <form (ngSubmit)="enviarFormulario()">
-      <div class="form-section">
-        <label>Nombre y Apellido:</label>
-        <input [(ngModel)]="nombreApellido" name="nombreApellido" type="text" required />
-  
-        <label>Email:</label>
-        <input [(ngModel)]="email" name="email" type="email" required />
-  
-        <label>Número Celular:</label>
-        <input [(ngModel)]="numeroCelular" name="numeroCelular" type="tel" required />
+
+<div class="container border-dark">
+  <h2>Datos de Persona Encuestada</h2>
+  <!--(ngSubmit)="enviarFormulario()" -->
+  <form class="form">
+    <div class="form-section">
+
+      <div class="form-group vevo">
+        <!--  [(ngModel)]="nombreApellido" -->
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="nombreApellido"
+          aria-describedby="nameHelp" placeholder="Ingresa nombre y apellido"
+          required>
       </div>
-  
-      <h2>Datos de la Ciudad y Preguntas Relevantes</h2>
-      <div class="form-section">
-        <label>Ciudad:</label>
-        <input [(ngModel)]="ciudad" name="ciudad" type="text" required />
-  
-        <label>Código Postal:</label>
-        <input [(ngModel)]="codigoPostal" name="codigoPostal" type="text" required />
-  
-        <label>Provincia:</label>
-        <input [(ngModel)]="provincia" name="provincia" type="text" required />
-  
-        <label>País de Origen:</label>
-        <input [(ngModel)]="paisOrigen" name="paisOrigen" type="text" required />
-  
+      <div class="form-group">
+        <!-- [(ngModel)]="email" -->
+        <label for="email">Email </label>
+        <input type="email" class="form-control" id="email"
+          aria-describedby="emailHelp" placeholder="Ingresa email" required>
         
-<h2>Preguntas Gastronómicas</h2>
-<div class="form-section">
-  <label>Preguntas Gastronómicas:</label>
-  <select [(ngModel)]="preguntasGastronomico" name="preguntasGastronomico">
-    <option *ngFor="let pregunta of preguntasGastronomico" [value]="pregunta">{{ pregunta }}</option>
-  </select>
+      </div>
+      <!-- [(ngModel)]="numeroCelular" -->
+      <div class="form-group">
+        <label for="nombreApellido">Número de celular</label>
+        <input type="tel" class="form-control" id="numeroCelular"
+          aria-describedby="celHelp" placeholder="Ingresa tu celular" required>
+      </div>
+    </div>
+    <br>
+    <h2>Datos de la Ciudad y Preguntas Relevantes</h2>
+    <div class="form-section">
+
+      <!-- [(ngModel)]="ciudad" -->
+      <label for="ciudad">Ciudad</label>
+      <input type="text" class="form-control" id="ciudad"
+        placeholder="Ciudad de Residencia" required>
+      <!--[(ngModel)]="codigoPostal" -->
+      <label for="codigoPostal">Ciudad</label>
+      <input type="text" class="form-control" id="Codigo Postal"
+        placeholder="Codigo Postal" required>
+      <!--[(ngModel)]="provincia" -->
+      <label for="provincia">Ciudad</label>
+      <input type="text" class="form-control" id="Provincia"
+        placeholder="Provincia" required>
+      <!--[(ngModel)]="paisOrigen" -->
+      <label for="paisOrigen">Ciudad</label>
+      <input type="text" class="form-control" id="Pais de"
+        placeholder="Pais de origen" required>
+
+        <br>
+      <h2>Preguntas Gastronómicas</h2>
+
+      <div class="form-group">
+        <label for="preguntasGastronomico">Preguntas Gastronomicas:</label>
+        <!--[(ngModel)]="preguntasGastronomico" -->
+        <select class="form-control" id="gastronomico"
+          name="preguntasGastronomico">
+          <!--*ngFor="let pregunta of preguntasGastronomico" [value]="pregunta">{{ pregunta }} -->
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="preguntasHotelero">Preguntas Hoteleras:</label>
+        <!--[(ngModel)]="preguntasHotelero" -->
+        <select class="form-control" id="hotelero" name="preguntasHotelero">
+          <!--*ngFor="let pregunta of preguntasHotelero" [value]="pregunta">{{ pregunta }} -->
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="preguntasEntretenimiento">Preguntas de Entretenimiento:</label>
+        <!--[(ngModel)]="preguntasEntretenimiento" -->
+        <select class="form-control" id="entretenimiento"
+          name="preguntasEntretenimiento">
+          <!--*ngFor="let pregunta of preguntasEntretenimiento" [value]="pregunta">{{ pregunta }} -->
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    
+    <div class="form-group botonS">
+      <button type="submit" class="btn btn-lg btn-primary">Enviar formulario</button>
+    </div>
+  </form>
 </div>
 
-<h2>Preguntas Hoteleras</h2>
-<div class="form-section">
-  <label>Preguntas Hoteleras:</label>
-  <select [(ngModel)]="preguntasHotelero" name="preguntasHotelero">
-    <option *ngFor="let pregunta of preguntasHotelero" [value]="pregunta">{{ pregunta }}</option>
-  </select>
-</div>
 
-<h2>Preguntas de Entretenimiento</h2>
-<div class="form-section">
-  <label>Preguntas de Entretenimiento:</label>
-  <select [(ngModel)]="preguntasEntretenimiento" name="preguntasEntretenimiento">
-    <option *ngFor="let pregunta of preguntasEntretenimiento" [value]="pregunta">{{ pregunta }}</option>
-  </select>
-</div>
-  
-      <button type="submit">Enviar Formulario</button>
-   
-  </div>
-  

@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { QuestionComponent } from '../question/question.component';
+
 
 @NgModule({
   declarations: [DashboardPageComponent],
@@ -10,7 +12,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
     DashboardRoutingModule,
   ],
   exports: [
-    DashboardPageComponent
+    DashboardPageComponent,
   ],
   providers: [],
 })
