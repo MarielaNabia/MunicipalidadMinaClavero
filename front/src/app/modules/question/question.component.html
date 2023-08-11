@@ -1,0 +1,58 @@
+<p>question works!</p>
+<div class="formulario-container">
+    <h2>Datos de Persona Encuestada</h2>
+    <form (ngSubmit)="enviarFormulario()">
+      <div class="form-section">
+        <label>Nombre y Apellido:</label>
+        <input [(ngModel)]="nombreApellido" name="nombreApellido" type="text" required />
+  
+        <label>Email:</label>
+        <input [(ngModel)]="email" name="email" type="email" required />
+  
+        <label>Número Celular:</label>
+        <input [(ngModel)]="numeroCelular" name="numeroCelular" type="tel" required />
+      </div>
+  
+      <h2>Datos de la Ciudad y Preguntas Relevantes</h2>
+      <div class="form-section">
+        <label>Ciudad:</label>
+        <input [(ngModel)]="ciudad" name="ciudad" type="text" required />
+  
+        <label>Código Postal:</label>
+        <input [(ngModel)]="codigoPostal" name="codigoPostal" type="text" required />
+  
+        <label>Provincia:</label>
+        <input [(ngModel)]="provincia" name="provincia" type="text" required />
+  
+        <label>País de Origen:</label>
+        <input [(ngModel)]="paisOrigen" name="paisOrigen" type="text" required />
+  
+        
+<h2>Preguntas Gastronómicas</h2>
+<div class="form-section">
+  <label>Preguntas Gastronómicas:</label>
+  <select [(ngModel)]="preguntasGastronomico" name="preguntasGastronomico">
+    <option *ngFor="let pregunta of preguntasGastronomico" [value]="pregunta">{{ pregunta }}</option>
+  </select>
+</div>
+
+<h2>Preguntas Hoteleras</h2>
+<div class="form-section">
+  <label>Preguntas Hoteleras:</label>
+  <select [(ngModel)]="preguntasHotelero" name="preguntasHotelero">
+    <option *ngFor="let pregunta of preguntasHotelero" [value]="pregunta">{{ pregunta }}</option>
+  </select>
+</div>
+
+<h2>Preguntas de Entretenimiento</h2>
+<div class="form-section">
+  <label>Preguntas de Entretenimiento:</label>
+  <select [(ngModel)]="preguntasEntretenimiento" name="preguntasEntretenimiento">
+    <option *ngFor="let pregunta of preguntasEntretenimiento" [value]="pregunta">{{ pregunta }}</option>
+  </select>
+</div>
+  
+      <button type="submit">Enviar Formulario</button>
+   
+  </div>
+  
