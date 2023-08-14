@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuestionComponent } from './modules/question/question.component';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { QuestionComponent } from './modules/question/question.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardModule
   ],
  
   providers: [],

@@ -1,0 +1,21 @@
+/* Header */
+.banner{
+
+    width: 100%;
+    height: 10rem;
+    background-image: url("../../../../assets/img/mina.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-color: white;
+}
+
+.navbar{
+
+    padding-left: 3.12rem;
+
+}
+
+.btn{
+    color: white;
+}

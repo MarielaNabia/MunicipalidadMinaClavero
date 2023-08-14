@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { QuestionComponent } from './modules/dashboard/question/question.component';
+import { DashboardPageComponent } from './modules/dashboard/dashboard-page/dashboard-page.component';
+import { ResponseComponent } from './modules/dashboard/response/response.component';
 
 const routes: Routes = [
   {
@@ -7,9 +10,19 @@ const routes: Routes = [
     loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
   },
   {
-    path: '**',
-    redirectTo: 'dashboard'
+    path: 'home',
+    component: DashboardPageComponent
+  },
+  {
+    path: 'encuesta',
+    component: QuestionComponent
+  },
+  {
+    path:  'response',
+    component: ResponseComponent
   }
+  
+ 
 ];
 
 @NgModule({
