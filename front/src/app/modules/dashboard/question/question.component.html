@@ -5,29 +5,69 @@
   <form class="form">
     <div class="form-section">
 
-      <div class="form-group vevo">
+      <div class="form-group">
         <!--  [(ngModel)]="nombreApellido" -->
-        <label for="nombreApellido">Nombre y Apellido</label>
-        <input type="text" class="form-control" id="nombreApellido"
-          aria-describedby="nameHelp" placeholder="Ingresa nombre y apellido"
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre"
+          placeholder="Ingresa nombre"
           required>
       </div>
+      <div class="form-group">
+        <!--  [(ngModel)]="nombreApellido" -->
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" id="apellido"
+          placeholder="Ingresa apellido"
+          required>
+      </div>
+      <div class="form-group">
+        <!--  [(ngModel)]="nombreApellido" -->
+        <label for="edad">Edad</label>
+        <input type="number" class="form-control" id="edad"
+          placeholder="Ingresa edad"
+          required>
+      </div>
+      <br>
+
+      <label for="sexo" class="col-2">Sexo:</label>
+      <br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Masculino
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Femenino
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Otro
+        </label>
+      </div>
+
+      <br>
       <div class="form-group">
         <!-- [(ngModel)]="email" -->
         <label for="email">Email </label>
         <input type="email" class="form-control" id="email"
-          aria-describedby="emailHelp" placeholder="Ingresa su email" required>
-        
+          placeholder="Ingresa su email" required>
+
       </div>
       <!-- [(ngModel)]="numeroCelular" -->
       <div class="form-group">
         <label for="nombreApellido">Número de celular</label>
         <input type="tel" class="form-control" id="numeroCelular"
-          aria-describedby="celHelp" placeholder="Ingresa su celular" required>
+          placeholder="Ingresa su celular" required>
       </div>
     </div>
     <br>
-    <h2>Datos de la Ciudad y Preguntas Relevantes</h2>
     <div class="form-section">
 
       <!-- [(ngModel)]="ciudad" -->
@@ -47,56 +87,478 @@
       <input type="text" class="form-control" id="Pais de"
         placeholder="Pais de origen" required>
 
-        <br>
-      <h2>Preguntas Gastronómicas</h2>
-
-      <div class="form-group">
-        <label for="preguntasGastronomico">Preguntas Gastronomicas:</label>
-        <!--[(ngModel)]="preguntasGastronomico" -->
-        <select class="form-control" id="gastronomico"
-          name="preguntasGastronomico">
-          <!--*ngFor="let pregunta of preguntasGastronomico" [value]="pregunta">{{ pregunta }} -->
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+      <br>
+      <h2>Preguntas Generales</h2>
+      <br>
+      <h4>
+        Vino a Mina Clavero?
+      </h4>
+      <br>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Television
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Pagina web
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Radio
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Medios Graficos
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Facebook
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Recomendacion
+        </label>
+      </div>
+      <div class="form-check form-check-inline col-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Otro
+        </label>
       </div>
 
-      <div class="form-group">
-        <label for="preguntasHotelero">Preguntas Hoteleras:</label>
-        <!--[(ngModel)]="preguntasHotelero" -->
-        <select class="form-control" id="hotelero" name="preguntasHotelero">
-          <!--*ngFor="let pregunta of preguntasHotelero" [value]="pregunta">{{ pregunta }} -->
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+      <h4>Por que eligio Mina Clavero para pasar sus vacaciones? (Varias
+        opciones)</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Porque ya conocia y le gusto el lugar
+        </label>
       </div>
-
-      <div class="form-group">
-        <label for="preguntasEntretenimiento">Preguntas de Entretenimiento:</label>
-        <!--[(ngModel)]="preguntasEntretenimiento" -->
-        <select class="form-control" id="entretenimiento"
-          name="preguntasEntretenimiento">
-          <!--*ngFor="let pregunta of preguntasEntretenimiento" [value]="pregunta">{{ pregunta }} -->
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Por que se lo recomendaron
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Por que vio alguna promocion en los medios
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Por que es un lugar tranquilo para la familia
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Por sus paisajes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Por sus eventos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Por la amabilidad de los vecinos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value
+          id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Otros
+        </label>
       </div>
     </div>
     <br>
-    
+
+    <h2>Hospedaje</h2>
+    <br>
+    <h4>Con o sin Reserva</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Con reserva
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Sin reserva
+      </label>
+    </div>
+
+    <h4>Tipo de Hospedaje que ha tomado</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Hotel
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Cabaña
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Hosteria
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Camping
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Casa de alguiler
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Otro
+      </label>
+    </div>
+    <h4>Como es el servicio de hospedaje que ha contratado?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Muy mala
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Mala
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Regular
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Buena
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Muy buena
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Excelente
+      </label>
+    </div>
+    <h4>Recibió material informativo de la Secretaría de Turismo en el
+      hospedaje donde se alojó?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Si
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        No
+      </label>
+    </div>
+
+    <h4>Pidio infomacion en las oficinas de turismo de Mina Clavero</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Si
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        No
+      </label>
+    </div>
+
+    <h4>En que oficina lo hizo?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Oficina de la rotonda de ingreso
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Oficina de Plazoleta Merlo
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Oficina de la Terminal
+      </label>
+    </div>
+   
+    <h4>Qué tipo de Información solicitó en las Oficinas de Turismo de Mina Clavero? (Varias opciones)</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Hospedaje
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Paseos
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Eventos
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Gastronomia
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Turismo Aventura
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Servicios
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Rutas
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value
+        id="flexCheckChecked" >
+      <label class="form-check-label" for="flexCheckChecked">
+        Otros
+      </label>
+    </div>
+
+    <h4>Que tipo de material se le entrego en la Oficina de Turismo?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Personalmente
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Revista
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Planos
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Calcomanias
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Guia de servicios
+      </label>
+    </div>
+
+    <h4>Como evalua el tipo de informacion brindada por las Oficinas de Turismo de Mina Clavero</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Muy mala
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Mala
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Regular
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Buena
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Muy buena
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Excelente
+      </label>
+    </div>
+
+    <h4>Aparte de la información solicitada, se le brindó algún otro tipo de información de su interés?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Si
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        No
+      </label>
+    </div>
+
+    <h4>Considera a Mina Clavero como un destino completo en cuanto a su oferta y servicios?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Si
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        No
+      </label>
+    </div>
+
+    <h4>Recomendaría Mina Clavero como destino turístico?</h4>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Si
+      </label>
+    </div>
+    <div class="form-check form-check-inline col-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault"
+        id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        No
+      </label>
+    </div>
+    <h4>Por que?</h4>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
     <div class="form-group botonS">
       <button type="submit" class="btn btn-lg btn-primary">Enviar formulario</button>
     </div>
   </form>
 </div>
-
-
