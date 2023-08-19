@@ -13,8 +13,7 @@ export class ResponseComponent implements OnInit {
   
 
   constructor() {
-    
-    
+
 
   }
 
